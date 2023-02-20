@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Fiorello CG Condensed';
+    src: url('FiorelloCGCondensed.woff2') format('woff2'),
+        url('FiorelloCGCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,41 @@
+body{
+    font-family: 'Helvetica Neue';
+}
+.over-header {
+    background-color:#000000;
+}
+.over-header__items {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.over-header__items a {
+    color: #FFFFFF;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 76px;
+}
+.header__navbar ul {
+    display: flex;
+    gap: 29px;
+}
+.header__navbar li {
+    text-transform: uppercase;
+    margin-right: 28px;
+    position: relative;
+}
+.header__navbar li.active::before {
+    content: url('img/Slash Graphic.png');
+    color: #02D1FF;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: -9px;
+    left: -10px;
+}
