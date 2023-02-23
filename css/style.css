@@ -1,17 +1,18 @@
 body{
-    font-family: 'Helvetica Neue';
+    font-family: 'HelveticaNeueCyr';
 }
-.over-header {
+.top-bar {
     background-color:#000000;
 }
-.over-header__items {
+.top-bar__items {
     display: flex;
     justify-content: flex-end;
     gap: 24px;
     padding-top: 8px;
     padding-bottom: 8px;
+    padding-right: 32px;
 }
-.over-header__items a {
+.top-bar__items a {
     color: #FFFFFF;
 
 }
@@ -20,6 +21,10 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 76px;
+    margin-bottom: -76px;
+}
+.header__navbar {
+    z-index: 2;
 }
 .header__navbar ul {
     display: flex;
@@ -29,13 +34,174 @@ body{
     text-transform: uppercase;
     margin-right: 28px;
     position: relative;
+   
+}
+.header__navbar a {
+    color: #FFFFFF;
+    font-weight: 500;
 }
 .header__navbar li.active::before {
-    content: url('img/Slash Graphic.png');
+    content: url('../img/Slash Graphic.png');
     color: #02D1FF;
     font-size: 30px;
     font-weight: bold;
     position: absolute;
-    top: -9px;
-    left: -10px;
+    top: -7px;
+    left: -15px;
 }
+.header-transparent img {
+    z-index: 2;
+    margin-left: 32px;
+}
+.preview__maim-img {
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    
+}
+.preview {
+    height: 900px;
+    position: relative;
+}
+.previev__rectangle {
+    width: 630px;
+height: 100%;
+background-color: #0F0E0E;
+clip-path: polygon(0% 0%, 100% 0%, 65% 100%, 0% 100%);
+position: absolute;
+    
+}
+.preview__text {
+    position: relative;
+    width: 612px;
+    padding-top: 257px;
+    margin-left: 40px;
+}
+.preview__title {
+    font-family: 'Fiorello CG Condensed';
+    font-size: 80px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-transform: uppercase;
+   
+
+}
+.preview__watch-more  {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+    margin-top: 64px;
+}
+.preview__watch-more a {
+    color: #FFFFFF;
+}
+.preview__watch-more img {
+    margin-left: 11px;
+}
+
+.preview__learn-more  {
+    /* color: #F9F9F9; */
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 191px;
+    /* margin-bottom: 63px; */
+}
+.preview__learn-more a {
+    color: #F9F9F9;
+}
+
+.services-tab {
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+   
+
+}
+.content-center {
+    max-width: 1028px;
+    display: flex;
+}
+
+.tab button.active::before {
+    content: url('../img/Slash Graphic-2.png');
+    /* color: #02D1FF;
+    font-size: 30px;
+    font-weight: bold; */
+    position: absolute;
+    top: -7px;
+    left: -35px;
+}
+/* Стиль табуляции */
+.tab {
+
+    
+  }
+  
+  /* Стиль кнопок внутри вкладок */
+  .tab button {
+    font-family:'Fiorello CG Condensed' ;
+    font-weight: 400;
+    font-size: 56px;
+    text-transform: uppercase;
+
+    display: block;
+    background-color: inherit;
+    color: #FFFFFF;
+    
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    
+  }
+  
+  /* Изменение цвета фона кнопок при наведении курсора мыши */
+  .tab button:hover {
+    /* background-color: #ddd; */
+  }
+  
+  /* Создание класса активной/текущей "вкладки кнопки" */
+  .tab button.active {
+    /* background-color: #ccc; */
+  }
+  
+  /* Стиль содержимого вкладки */
+  .tabcontent {
+    display: none;
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 40px;
+    color: #FFFFFF;
+    padding: 0px 12px;
+    position: relative;
+  
+    
+    border-left: none;
+    
+  }
+  .tabcontent p {
+    max-width: 580px;
+    position: relative;
+  }
+  /* .tablinks {
+    text-transform: uppercase;
+  } */
+  .content-center__rectangle-left {
+    width: 243px;
+    height: 518.45px;
+    position: absolute;
+    clip-path: polygon(30% 10%, 100% 0%, 70% 90%, 0% 100%);
+  }
+  .content-center__rectangle-right {
+    width: 243px;
+    height: 518.45px;
+    position: absolute;
+    left: 271px;
+    clip-path: polygon(30% 10%, 100% 0%, 70% 90%, 0% 100%);
+  }

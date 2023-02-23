@@ -3,16 +3,18 @@
     <head>
         <meta charset="utf-8">
         <title>TSE</title>
+        <link rel="stylesheet" href="fonts/HelveticaNeue/stylesheet.css">
+        <link rel="stylesheet" href="fonts/FiorelloCGCondensed/stylesheet.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="fonts/stylesheet.css">
-        <link rel="preconnect" href="fonts/FiorelloCGCondensed/stylesheet.css">
+        
+        <!-- <link rel="preconnect" href="fonts/FiorelloCGCondensed/stylesheet.css"> -->
         
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     </head>
     <body>
-        <section class="over-header">
-            <ul class="over-header__items">
+        <section class="top-bar">
+            <ul class="top-bar__items">
                 <li><a href="#">South Break Media</a></li>
                 <li><a href="#">Hoops Capital Academy</a></li>
                 <li><a href="#">Sydney kings</a></li>
@@ -37,6 +39,53 @@
             
         </header>
         <section class="preview">
-            <img src="img/city-1 1 (1).png">
+            <img src="img/city-1 1 (1).png" class="preview__maim-img">
+            <div class="previev__rectangle"></div>
+            <div class="preview__text"> 
+                <p class="preview__title">We grow businesses by creating experiences people love.</p>
+                <p class="preview__watch-more"><a href="#">Watch highlight REEL <img src="img/Vector (8).png"></a></p>
+                <p class="preview__learn-more"><a href="#">SCROLL TO LEARN MORE</a></p>
+            </div>
         </section>
+        <section class="services-tab">
+            <div class="content-center">
+                <div class="tab">
+                    <button class="tablinks active"  onclick="openCity(event, 'London')">Sports Management</button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')">Talent Management</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Sports Marketing</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Sponsor Services</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Creative Services</button>
+              </div>
+              
+
+              <div class="content-center__content">
+                
+                
+
+                <div id="London" class="tabcontent" style="display: block;">
+                    <div class="content-center__rectangle-left" style="background: url(img/image-4.png)"></div>
+                    <div class="content-center__rectangle-right" style="background: url(img/image-5.png)"></div>
+                    <p>Our unique end to end, plug and play, integrated package of services deliver more profitable world class experiences.</p>
+                </div>
+                
+                <div id="Paris" class="tabcontent"  >
+                    <p>Our unique end to end, plug and play, integrated package of services deliver more profitable world class experiences.</p>
+                </div>
+                
+                <div id="Tokyo" class="tabcontent">
+                    <p>Our unique end to end, plug and play, integrated package of services deliver more profitable world class experiences.</p>
+                </div>
+                <div class="content-center__content">
+                    <div id="London" class="tabcontent">
+                    <p>Our unique end to end, plug and play, integrated package of services deliver more profitable world class experiences.</p>
+                </div>
+                <div class="content-center__content">
+                    <div id="London" class="tabcontent">
+                    <p>Our unique end to end, plug and play, integrated package of services deliver more profitable world class experiences.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <script src="TSE.js"></script>
     </body>
