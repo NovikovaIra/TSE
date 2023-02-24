@@ -67,10 +67,10 @@ body{
 }
 .previev__rectangle {
     width: 630px;
-height: 100%;
-background-color: #0F0E0E;
-clip-path: polygon(0% 0%, 100% 0%, 65% 100%, 0% 100%);
-position: absolute;
+    height: 100%;
+    background-color: #0F0E0E;
+    clip-path: polygon(0% 0%, 100% 0%, 65% 100%, 0% 100%);
+    position: absolute;
     
 }
 .preview__text {
@@ -92,8 +92,7 @@ position: absolute;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
-    
-    margin-top: 64px;
+     margin-top: 64px;
 }
 .preview__watch-more a {
     color: #FFFFFF;
@@ -103,11 +102,9 @@ position: absolute;
 }
 
 .preview__learn-more  {
-    /* color: #F9F9F9; */
-    text-transform: uppercase;
+   text-transform: uppercase;
     font-weight: 500;
     margin-top: 191px;
-    /* margin-bottom: 63px; */
 }
 .preview__learn-more a {
     color: #F9F9F9;
@@ -117,40 +114,39 @@ position: absolute;
     background-color: #171717;
     display: flex;
     justify-content: center;
-   
-
+    flex-direction: column;
+    align-items: center;
 }
 .content-center {
-    max-width: 1028px;
+    max-width: 1248px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 125px;
+    padding-bottom: 128px;
+    gap: 17vw;
 }
 
 .tab button.active::before {
     content: url('../img/Slash Graphic-2.png');
-    /* color: #02D1FF;
-    font-size: 30px;
-    font-weight: bold; */
     position: absolute;
     top: -7px;
     left: -35px;
 }
 /* Стиль табуляции */
 .tab {
-
-    
-  }
-  
-  /* Стиль кнопок внутри вкладок */
-  .tab button {
+    width: 417px;
+    padding-left: 37px;
+}
+/* Стиль кнопок внутри вкладок */
+.tab button {
     font-family:'Fiorello CG Condensed' ;
     font-weight: 400;
     font-size: 56px;
     text-transform: uppercase;
-
-    display: block;
+     display: block;
     background-color: inherit;
     color: #FFFFFF;
-    
     width: 100%;
     border: none;
     outline: none;
@@ -158,50 +154,67 @@ position: absolute;
     cursor: pointer;
     transition: 0.3s;
     position: relative;
+}
     
-  }
-  
-  /* Изменение цвета фона кнопок при наведении курсора мыши */
-  .tab button:hover {
+/* Изменение цвета фона кнопок при наведении курсора мыши */
+.tab button:hover {
     /* background-color: #ddd; */
-  }
-  
-  /* Создание класса активной/текущей "вкладки кнопки" */
-  .tab button.active {
-    /* background-color: #ccc; */
-  }
-  
-  /* Стиль содержимого вкладки */
-  .tabcontent {
+}
+/* Создание класса активной/текущей "вкладки кнопки" */
+.tab button.active {
+     /* background-color: #ccc; */
+}
+/* Стиль содержимого вкладки */
+.tabcontent {
     display: none;
-    font-family: 'Helvetica Neue';
-    font-weight: 500;
-    font-size: 40px;
     color: #FFFFFF;
     padding: 0px 12px;
     position: relative;
-  
-    
     border-left: none;
-    
-  }
-  .tabcontent p {
+    min-height: 610px;
+    align-items: center;
+}
+.tabcontent p {
     max-width: 580px;
     position: relative;
-  }
-  /* .tablinks {
-    text-transform: uppercase;
-  } */
-  .content-center__rectangle-left {
+    font-family:'HelveticaNeueCyr';
+    font-weight: 500;
+    font-size: 40px;
+}
+.services-tab__rectangle {
+    position: absolute;
+    display: flex;
+}
+.services-tab__rectangle-left {
     width: 243px;
     height: 518.45px;
-    position: absolute;
+    margin-top: 98px;
+    margin-right: -43px;
     clip-path: polygon(30% 10%, 100% 0%, 70% 90%, 0% 100%);
-  }
-  .content-center__rectangle-right {
+}
+.services-tab__rectangle-right {
     width: 243px;
     height: 518.45px;
-    position: absolute;
-    left: 271px;
     clip-path: polygon(30% 10%, 100% 0%, 70% 90%, 0% 100%);
-  }
+}
+.services-tab__wrapper {
+    display: flex;
+    gap: 6vw;
+}
+.services-tab__wrapper-column {
+    width: 327px;
+}
+.services-tab__wrapper-column h2 {
+    font-family:'Fiorello CG Condensed';
+    font-weight: 400;
+    font-size: 36px;
+    color: #F9F9F9;
+    padding-bottom: 20px;
+}
+.services-tab__wrapper-column p{
+    font-family:'HelveticaNeueCyr';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}

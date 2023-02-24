@@ -15,6 +15,6 @@ function openCity(evt, cityName) {
     }
   
     // Показать текущую вкладку и добавить класс "active" по ссылке, открывшей вкладку
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(cityName).style.display = "flex";
     evt.currentTarget.className += " active";
   }
