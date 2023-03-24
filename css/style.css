@@ -536,4 +536,37 @@ color: #FFFFFF;
 }
 .footer {
     background-color: #000000;
+   
+    padding-top: 64px;
+}
+.footer__content-center {
+    width: 1248px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.footer__main {
+    display: flex;
+    width: 719px;
+    justify-content: space-between;
+}
+.footer__navbar ul {
+    display: flex;
+    flex-direction: column;
+}
+.footer__main a {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+.footer__social-media img {
+    margin-right: 12px;
+}
+.footer__links-elem img {
+    margin-left: 13px;
 }
