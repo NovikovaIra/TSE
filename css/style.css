@@ -810,4 +810,37 @@ margin-top: 32px;
 .service-detail__big-title-black-title-main {
     left: 556px;
 }
- 
+.service-detail__big-title {
+    padding-bottom: 0;
+}
+.header-gray{
+    background-color:  #171717;;
+    margin-bottom: 0;
+}
+.case-studies__content {
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+}
+.case-studies__content-center {
+    width: 1248px;
+}
+.case-studies__title {
+    font-family: 'Fiorello CG Condensed';
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 80px;letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 93px;
+}
+.case-studies__text {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    width: 825px;
+    margin-top: 16px;
+}
