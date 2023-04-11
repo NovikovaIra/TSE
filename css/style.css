@@ -844,3 +844,71 @@ margin-top: 32px;
     width: 825px;
     margin-top: 16px;
 }
+.case-studies__content-center img {
+    position: absolute;
+}
+.case-studies__content-center .sliders__rectangle-watch-more {
+    text-align: center;
+    padding-bottom: 96px;
+}
+.Our-Ethos {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+}
+.Our-Ethos__content-center {
+    width: 1248px;
+    
+}
+.Our-Ethos__small-text {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #E0E0E0;
+    padding-top: 64px;
+    padding-bottom: 24px;
+}
+.Our-Ethos__text {
+    font-family: 'HelveticaNeueCyr';
+font-weight: 400;
+font-size: 26px;
+line-height: 38px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+padding-bottom: 64px;
+}
+
+.case-study-detail__preview {
+    height: 100%;
+}
+.case-study-detail__preview-text {
+    height: 704px;
+    padding-top: 241px;
+}
+.case-study-detail__content {
+    background-color:  #171717;
+    display: flex;
+    justify-content: center;
+}
+.case-study-detail__content-center{
+    width: 1248px;
+}
+.case-study-detail__small-title{
+    padding-top: 64px;
+    padding-bottom: 30px;
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.case-study-detail__content-center .case-studies__text{
+    padding-bottom: 64px;
+}
+
+.case-study-detail__content-center img {
+    position: absolute;
+}
