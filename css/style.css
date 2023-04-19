@@ -1006,3 +1006,110 @@ padding-bottom: 64px;
     padding-bottom: 96px;
     padding-top: 24px;
 }
+.article__middle-text a {
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  
+}
+.article__middle-text {
+    padding-top: 50px;
+    padding-bottom: 32px;
+ 
+}
+.article__middle-text img {
+    margin-right: 11px;
+    /* position: static; */
+    vertical-align: baseline;
+}
+.article__small-text {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+
+}
+.article__title {
+    font-family: 'Fiorello CG Condensed';
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 825px;
+    padding-bottom: 64px;
+}
+.article__content {
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+}
+.article__content-center {
+        width: 1248px;
+}
+
+.article__video {
+   height: 649px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article__video-play img{
+    position: absolute;
+}
+.article__text-date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 48px;
+}
+.article__text-date p {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #E0E0E0;
+    text-transform: uppercase;
+}
+.article__icon {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 125.5px;
+    top: 162px;
+    gap: 27px;
+}
+.article__content-center .case-study-detail__content-center-black {
+    position: relative;
+}
+.article__text {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    margin-top: 16px;
+}
+.article__content-center .case-study-detail__content-center-small__text-uppercase {
+    padding-bottom: 48px;
+}
+.article__list-item p {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
