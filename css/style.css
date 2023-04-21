@@ -625,6 +625,9 @@ color: #FFFFFF;
     position: absolute;
     top: 86.5%;
 }
+.case-study-detail__content-center .swiper-button-next {
+    top: 94.5%;
+}
 .swiper-rtl .swiper-button-prev:after {
     content: 'img/Vector (10).png';
 }
@@ -916,7 +919,7 @@ padding-bottom: 64px;
     padding-bottom: 0;
 
 }
-.case-study-detail__content-center .swiper-button-next,.swiper-button-prev {
+.case-study-detail__content-center .swiper-button-prev {
     position: absolute;
     top: 94.5%;
 }
@@ -1052,9 +1055,11 @@ padding-bottom: 64px;
     background-color: #171717;
     display: flex;
     justify-content: center;
+    padding-bottom: 64px;
 }
 .article__content-center {
         width: 1248px;
+        
 }
 
 .article__video {
@@ -1091,6 +1096,7 @@ padding-bottom: 64px;
 }
 .article__content-center .case-study-detail__content-center-black {
     position: relative;
+    padding-bottom: 112px;
 }
 .article__text {
     font-family: 'HelveticaNeueCyr';
@@ -1105,11 +1111,80 @@ padding-bottom: 64px;
 .article__content-center .case-study-detail__content-center-small__text-uppercase {
     padding-bottom: 48px;
 }
-.article__list-item p {
+.article__list-item  {
     font-family: 'HelveticaNeueCyr';
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
     letter-spacing: 0.01em;
     color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+.article__list-item img {
+    margin-right: 8px;
+}
+.case-study-detail__content-center-small .swiper-button-next {
+    top: 83.4%;
+}
+.case-study-detail__content-center-small .swiper-button-prev {
+    top: 83.4%;
+}
+.article__big-title__white-title {
+    min-width: 565px;
+}
+.article__big-title__black-title-main {
+    left: 665px;
+}
+.article__back-to-text {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+
+}
+.article__back-to-text img {
+    margin-right: 11px;
+}
+.people__service-listing__services-elem {
+    padding-top: 124px;
+}
+.people__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.people__wrapper-item {
+    Width: 288px;
+    min-height: 456px;
+    background-color:#000000;
+}
+.people__wrapper-item h2 {
+    font-family: 'Fiorello CG Condensed';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.people__wrapper-item p {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #E0E0E0;
+}
+.people__wrapper img {
+    position: static;
+}
+.people__wrapper-title {
+    margin-top: 16px;
+    margin-left: 16px;
 }
