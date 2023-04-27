@@ -1157,6 +1157,8 @@ padding-bottom: 64px;
 .people__wrapper {
     display: flex;
     flex-wrap: wrap;
+    gap: 32px;
+    padding-bottom: 96px;
 }
 
 .people__wrapper-item {
@@ -1228,7 +1230,178 @@ padding-bottom: 64px;
 .people__wrapper-item-rectangle-text h2 {
     position: absolute;
 }
+.people__wrapper-item-rectangle-text a {
+    position: absolute;
+}
 
 .people__wrapper-item:hover .people__wrapper-item-rectangle {
     visibility: visible;
 }
+.people__pop-up {
+    max-width: 1248px;
+    height: 712px;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.people__pop-up-card {
+    width: 416px;
+    height: 712px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 49px;
+}
+.people__pop-up-text {
+    width: 719px;
+    height: 712px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 14px;
+}
+.people__pop-up-text-small {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+    width: 641px;
+}
+.people__pop-up-text-name {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+   
+.people__pop-up-text-contact {
+        display: flex;
+    gap: 27px;
+}
+.people__pop-up-card-main-title {
+    padding-bottom: 32px;
+}
+.people__pop-up-card h1 {
+    font-family: 'Fiorello CG Condensed';
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+.people__pop-up-card-text {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.people__pop-up-card-title {
+    font-family: 'HelveticaNeueCyr';
+font-weight: 500;
+font-size: 36px;
+line-height: 48px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+padding-top: 64px;
+
+}
+
+
+.modal {
+    position: fixed;
+    /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* цвет фона */
+    z-index: 1050;
+    opacity: 0;
+    /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    /* анимация перехода */
+    pointer-events: none;
+    /* элемент невидим для событий мыши */
+  }
+
+  /* при отображении модального окно */
+  .modal:target {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+  }
+
+  /* ширина модального окна и его отступы от экрана */
+  .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+    /* align-items: center;
+    display: flex; */
+  }
+./* свойства для блока, содержащего контент модального окна */
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+  }
+    /* свойства для кнопки "Закрыть" */
+    .close {
+        float: right;
+        font-family: sans-serif;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 1;
+        color: #FFFFFF;
+        /* text-shadow: 0 1px 0 #fff; */
+        /* opacity: .5; */
+        text-decoration: none;
+        position: absolute;
+    top: 32px;
+    right: 32px;
+      }
+  
+      /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+      .close:focus,
+      .close:hover {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: .75;
+      }
+  
+      /* свойства для блока, содержащего основное содержимое окна */
+      .modal-body {
+        position: relative;
+        
+      }
