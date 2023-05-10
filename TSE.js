@@ -26,6 +26,13 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+var swiperBlack = new Swiper(".mySwiperBlack", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 function on() {
   document.getElementById("overlay").style.display = "block";
 }
@@ -34,10 +41,18 @@ function off() {
   document.getElementById("overlay").style.display = "none";
 }
 
+// let menuBtn = document.querySelector('.menu-btn');
+// let menu = document.querySelector('.menu');
+
+// menuBtn.addEventListener('click', function(){
+// 	menuBtn.classList.toggle('active');
+// 	menu.classList.toggle('active');
+// })
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
-
+let body = document.querySelector('body');
 menuBtn.addEventListener('click', function(){
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
+    body.classList.toggle('noactive');
 })
